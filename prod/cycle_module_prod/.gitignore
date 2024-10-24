@@ -1,0 +1,4 @@
+.terraform/
+adem.pem
+terraform.tfstate
+.terraform.lock.hcl

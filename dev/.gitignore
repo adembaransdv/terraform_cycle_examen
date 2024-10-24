@@ -1,0 +1,7 @@
+adem.pem
+id_rsa
+id_rsa.pub
+.terraform
+terraform.tfstate
+.terraform.lock.hcl
+terraform.tfstate.backup
