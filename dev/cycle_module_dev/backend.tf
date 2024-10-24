@@ -10,7 +10,7 @@ resource "tls_private_key" "ssh_key" {
 }
 
 resource "aws_key_pair" "deployer_key" {
-  key_name   = var.aws_key_pair
+  key_name   = "adem-key-dev"
   public_key = tls_private_key.ssh_key.public_key_openssh
 }
 
@@ -54,7 +54,7 @@ resource "aws_instance" "adem" {
 }
 
 resource "aws_security_group" "allow_http_https" {
-  name        = var.aws_security_group
+  name        = "adem-sg-dev"
   description = "Allow HTTP, HTTPS, and SSH inbound traffic"
 
   ingress {
